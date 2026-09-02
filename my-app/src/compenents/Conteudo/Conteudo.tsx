@@ -1,3 +1,5 @@
+import imgQuadrada from "../../img/quadrado.png"
+
 export default function Conteudo(){
 
     return(
@@ -8,8 +10,19 @@ export default function Conteudo(){
             </section>
             <section>
                 <h2>Exemplo de imagens</h2>
+               {/*Esta imagem tem referencia externa*/} 
             </section>
             <img src="https://placehold.co/400x400/c1c1c1/000000/png" alt="Exemplo de imagem" />
+            <figcaption>Bloco de imagem 400 x 400 </figcaption>
+
+            {/*Esta imagem tem referencia interna*/} 
+
+            <img src={imgQuadrada} alt="Exemplo de imagem" />
+            <figcaption>Bloco de imagem 400 x 400 </figcaption>
+
+            {/*Esta imagem tem referencia interna na public*/} 
+
+            <img src="/img/quadrado.png" alt="Exemplo de imagem" />
             <figcaption>Bloco de imagem 400 x 400 </figcaption>
         </main>
     )
