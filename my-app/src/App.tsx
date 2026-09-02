@@ -1,8 +1,16 @@
-function App() {
-   return (
-    <h1>Oi</h1>
+import Cabecalho from './components/Cabecalho'
+import Conteudo from './components/Conteudo'
+import Rodape from './components/Rodape'
+
+export default function App() {
+  return (
+    <>
+      <Cabecalho />
+      <Conteudo />
+      <Rodape />
+    </>
   )
-} 
+}
 
 
-export default App
+
