@@ -1,25 +1,48 @@
+import { useState } from 'react'
+import image from '../../img/image.png'
+
 export default function Conteudo() {
-	return (
-	
+     const [mostraSecao, setMostraSecao] = useState(false)
+     const alternaSecao = () => {
+          setMostraSecao(!mostraSecao)
+          console.log('mostraSecao', mostraSecao)
+     }
+
+     return (
           <main>
-          <section>
-	<h2>Conteúdo principal</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem accusamus dolorem reprehenderit 
-          illum omnis vero, maiores temporibus amet culpa doloribus aut impedit blanditiis, vitae, ipsam est autem
-          provident fugiat exercitationem reiciendis cum. Eligendi praesentium optio consectetur culpa,
-          id similique quis, molestias ullam eveniet ad non nulla, quo iure. Suscipit dolorem soluta vitae dolorum, totam nihil id quidem vero quam, natus obcaecati? Aliquam omnis dolore perferendis iusto officiis doloremque suscipit. Ex libero consectetur obcaecati, quasi expedita debitis quaerat corrupti, enim, doloribus a laboriosam voluptas omnis. Esse alias eos, nobis asperiores repudiandae aliquid labore quam
-        , ea, inventore debitis obcaecati reprehenderit hic. Dicta!</p>
-         </section>
-         <section>
-          <h2>Imagem de exemplo</h2>
-          <figure>
-	<img
-	src="https://placehold.co/400x400/c1c1c1/000000/png"
-          alt="Imagem de exemplo em tons claros"
-	/>
-		<figcaption>Imagem de exemplo</figcaption>
-	</figure>
-          </section>
-		</main>
-          )
+               <section>
+                    <h2>Conteúdo principal</h2>
+                    <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                         accusamus dolorem reprehenderit illum omnis vero, maiores temporibus
+                         amet culpa doloribus aut impedit blanditiis, vitae, ipsam est autem
+                         provident fugiat exercitationem reiciendis cum.
+                    </p>
+                    <button onClick={alternaSecao}>Alternar imagens</button>
+               </section>
+
+               {mostraSecao && (
+                    <section>
+                         <h2>Exemplos de imagens</h2>
+                         <figure>
+                              <img
+                                   src="https://placehold.co/400x400/c1c1c1/000000/png"
+                                   alt="Imagem de exemplo externa"
+                              />
+                              <figcaption>Bloco de Imagem 400 x 400</figcaption>
+                         </figure>
+
+                         <figure>
+                              <img src={image} alt="Imagem de exemplo interna" />
+                              <figcaption>Bloco de Imagem 400 x 400</figcaption>
+                         </figure>
+
+                         <figure>
+                              <img src="/quadrado.png" alt="Imagem de exemplo pública" />
+                              <figcaption>Bloco de Imagem 400 x 400</figcaption>
+                         </figure>
+                    </section>
+               )}
+          </main>
+     )
 }
