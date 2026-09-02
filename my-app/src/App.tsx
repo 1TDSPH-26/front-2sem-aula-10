@@ -1,9 +1,15 @@
-export default function App(){
+//comando rfc 
 
+import Cabecalho from "./components/Cabecalho/Cabecalho";
+import Conteudo from "./components/Conteudo/Conteudo";
+import Rodape from "./components/Rodape/Rodape";
+
+export default function App(){
     return(
         <div>
-            <h1>Bem-vindo à minha aplicação</h1>
-            <p>Este e meu exemplo teste da minha app.tsx</p>
+            <Cabecalho />
+            <Conteudo />
+            <Rodape />
         </div>
     );
 }
