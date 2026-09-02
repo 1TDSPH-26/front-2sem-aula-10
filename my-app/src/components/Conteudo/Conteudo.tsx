@@ -1,4 +1,4 @@
-
+import Quadrado from '../../img/quadrado.png'
 
 export default function Conteudo() {
 
@@ -15,7 +15,11 @@ export default function Conteudo() {
                     <img src="https://placehold.co/600x400/1c1c1c1/FFFFFF/png" alt="" />
                     <figcaption>Bloco de imagem 600x400</figcaption>
                 </figure>
-                
+
+                 <figure>
+                    <img src={Quadrado} alt="" />
+                    <figcaption>Bloco de imagem 400x400</figcaption>
+                </figure>
 
             </section>
         </main>
