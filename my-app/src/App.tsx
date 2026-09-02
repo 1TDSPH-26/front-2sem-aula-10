@@ -1,10 +1,14 @@
+import Cabecalho from './components/cabecalho'
+import Conteudo from './components/conteudo'
+import Rodape from './components/Rodape'
+
 function App() {
   return (
     <div>
-      <h1>Minha aplicação React</h1>
-      <p>Projeto desenvolvido para a aula de Front-end.</p>
+      <Cabecalho />
+      <Conteudo />
+      <Rodape />
     </div>
   )
 }
-
 export default App
