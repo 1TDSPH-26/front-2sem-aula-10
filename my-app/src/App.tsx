@@ -1,0 +1,6 @@
+export default function App(){
+
+  return(
+    <h1>Cabeçalho</h1>
+  );
+}
