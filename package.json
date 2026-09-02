@@ -1,0 +1,20 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/1TDSPH-26/front-2sem-aula-10#readme",
+  "bugs": {
+    "url": "https://github.com/1TDSPH-26/front-2sem-aula-10/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1TDSPH-26/front-2sem-aula-10.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
