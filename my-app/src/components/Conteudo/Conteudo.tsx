@@ -1,6 +1,14 @@
+import { useState } from "react";
 import imgQuadrada from "../../img/quadrado.png";
 
 export default function Conteudo(){
+
+         const [mostraSecao, setMostraSecao] = useState(false);
+
+         const alternaSecao = () => {
+            setMostraSecao(!mostraSecao);
+            console.log(mostraSecao);
+         }
 
     return (
         <main>
@@ -20,7 +28,7 @@ export default function Conteudo(){
                     alt="Exemplo de Imagem"></img>
                     <figcaption>Bloco de Imagem 400 x 400</figcaption>
                 </figure>
-                {/*Esta imagem tem referência externa*/}
+                {/*Esta imagem tem referência interna na /src*/}
                 <figure>
                     <img src={imgQuadrada}
                     alt="Exemplo de Imagem"></img>
@@ -33,6 +41,12 @@ export default function Conteudo(){
                     <figcaption>Bloco de Imagem 400 x 400</figcaption>
                 </figure>
             </section>
+
+            <section>
+                <h2>Especial</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis est labore ducimus suscipit, natus commodi molestias asperiores ipsa aspernatur quidem beatae officiis accusantium provident quae vitae expedita voluptates iure esse fuga, deserunt modi? Eos vel alias reprehenderit nemo non impedit ipsa, dolorem, fuga assumenda numquam exercitationem omnis. Doloremque, totam.</p>
+            </section>
+            <button onClick={alternaSecao}>{mostraSecao ? "ESCONDER" : "MOSTRAR"}</button>
         </main>
     
     );
