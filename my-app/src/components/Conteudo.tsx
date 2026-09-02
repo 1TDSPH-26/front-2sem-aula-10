@@ -1,5 +1,13 @@
 import quadrado from '../img/quadrado.png'
+import { useState } from 'react';
 export default function Conteudo() {
+  const[mostraSecao, setMostraSecao] = useState(false);
+
+  const alternaSecao = () => {
+    setMostraSecao(!mostraSecao);
+    console.log(mostraSecao);
+  };
+
   return (
     <main>
       <h2>Conteúdo</h2>
@@ -14,6 +22,7 @@ export default function Conteudo() {
           <figcaption>Figura 1: Imagem de exemplo</figcaption>
         </figure>
       </section>
+      <button onClick={alternaSecao}>{mostraSecao ? 'Esconder secao' : 'Mostrar secao'}</button>
     </main>
   )
 }
