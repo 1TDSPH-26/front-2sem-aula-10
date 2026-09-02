@@ -14,7 +14,7 @@ export default function Conteudo() {
           <h2>Imagem de exemplo</h2>
           <figure>
 	<img
-	src="https://placehold.co/600x400/FFFFF0/FFFFFF/png"
+	src="https://placehold.co/400x400/c1c1c1/000000/png"
           alt="Imagem de exemplo em tons claros"
 	/>
 		<figcaption>Imagem de exemplo</figcaption>
