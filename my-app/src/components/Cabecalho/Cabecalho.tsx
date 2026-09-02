@@ -1,7 +1,7 @@
 export default function Cabecalho(){
     return(
         <header>
-            Cabeçalho
+            <h1>Meu boilerplate</h1>
         </header>
     )
 }

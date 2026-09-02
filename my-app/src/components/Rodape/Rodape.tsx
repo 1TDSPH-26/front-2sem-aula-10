@@ -1,7 +1,7 @@
 export default function Rodape() {
     return (
         <footer>
-            Rodapé
+            <p>&copy; 2026 - Todos os direitos reservados - Boilerplate</p>
         </footer>
     )
 }
