@@ -1,7 +1,13 @@
+import Cabecalho from './components/Cabecalho'
+import Conteudo from './components/Conteudo'
+import Rodape from './components/Rodape'
+
 function App() {
   return (
     <div>
-      <h1>My App</h1>
+      <Cabecalho />
+      <Conteudo />
+      <Rodape />
     </div>
   )
 }
