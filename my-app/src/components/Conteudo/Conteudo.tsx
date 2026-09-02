@@ -10,6 +10,14 @@ export default function Conteudo() {
           perspiciatis repudiandae non! Tenetur.
         </p>
       </section>
+      <section>
+        <h2>Exemplo de Imagens</h2>
+        <figure>
+            <img src="https://placehold.co/400x400/c1c1c1/000000/png" 
+            alt="Exemplo de Imagem" />
+            <figcaption>Bloco de Imagem 400x400</figcaption>
+        </figure>
+      </section>
     </main>
   )
 }
