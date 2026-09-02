@@ -1,8 +1,8 @@
-import Cabecalho from './components/cabecalho'
-import Conteudo from './components/conteudo'
+import Cabecalho from './components/Cabecalho'
+import Conteudo from './components/Conteudo'
 import Rodape from './components/Rodape'
 
-function App() {
+export default function App() {
   return (
     <div>
       <Cabecalho />
@@ -11,4 +11,3 @@ function App() {
     </div>
   )
 }
-export default App
