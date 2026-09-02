@@ -8,12 +8,19 @@ export default function Conteudo() {
       </p>
 
       <section>
-        <h2>Produtos</h2>
+        <h2>Lista aleatória</h2>
 
-        <p>Produto 1 - R$ 100,00</p>
-        <p>Produto 2 - R$ 50,00</p>
-        <p>Produto 3 - R$ 10,00</p>
+        <p>Produto aleatório - R$ 14,90</p>
+
+
+    <figure>
+        <img
+            src="https://placehold.co/600x400/FFFFF0/FFFFFF/png"
+            alt="Imagem placeholder"/>
+
+        <figcaption>Imagem de exemplo 600x400</figcaption>
+        </figure>
       </section>
     </main>
-  );
+);
 }
