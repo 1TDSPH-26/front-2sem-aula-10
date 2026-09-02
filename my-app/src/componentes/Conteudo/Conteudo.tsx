@@ -1,7 +1,12 @@
+import { useState } from "react";
 import imgQuadrada from "../../img/quadrado.png";
 
 export default function Conteudo(){
-
+    const[mostraSecao, setMostraSecao] = useState(false);
+    const alternaSecao = ()  =>{
+        setMostraSecao(!mostraSecao);
+        console.log(mostraSecao);
+    }
     return(
         <main>
             <section>
@@ -28,7 +33,13 @@ export default function Conteudo(){
                 </figure>
                 <figcaption>Bloco de imagem 400 x 400</figcaption>
             </section>
-            
+            <section>
+                <h2>Especial</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sequi aliquam dolorem, ad illum voluptatibus animi, ullam sit facere ipsum doloribus quam aspernatur placeat laboriosam maiores rem, ab delectus dicta iste! Rerum inventore quos est provident cupiditate maxime enim non fuga nobis laudantium expedita blanditiis voluptate labore ratione, itaque excepturi.
+                </p>
+            </section>
+            <button onClick={alternaSecao}>{mostraSecao ? "ESCONDER" : "MOSTRAR"}</button>
         </main>
     );
 }
