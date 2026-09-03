@@ -1,13 +1,13 @@
-import { Cabecalho} from './components/Cabecalho/Cabecalho'
-import { Conteudo } from './components/Conteudo/Conteudo';
-import { Rodape } from './components/Rodape/Rodape';
+import Cabecalho from "./components/Cabecalho/Cabecalho";
+import Conteudo from "./components/Conteudo/Conteudo";
+import Rodapes from "./components/Rodapes/Rodapes";
 
 export default function App() {
   return (
     <div>
       <Cabecalho />
-      <Conteudo />
-      <Rodape />
+      <Conteudo/>
+      <Rodapes/>
     </div>
-  );
+  )
 }
